@@ -28,7 +28,9 @@
 //                                                                            //
 ////////////////////////////////////////////////////////////////////////////////
 `include "cv32e40p_apu_core_pkg.sv"
+`include "cv32e40p_pkg.sv"
 import cv32e40p_apu_core_pkg::*;
+import cv32e40p_pkg::*;
 module cv32e40p_core
   
 #(
@@ -99,8 +101,8 @@ module cv32e40p_core
     input  logic fetch_enable_i,
     output logic core_sleep_o
 );
-  `include "cv32e40p_pkg.sv"
-  import cv32e40p_pkg::*;
+  
+  
 
   // Unused parameters and signals (left in code for future design extensions)
   localparam PULP_SECURE = 0;
