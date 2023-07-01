@@ -26,7 +26,7 @@
 //                 Added Floating point support                               //
 //                                                                            //
 ////////////////////////////////////////////////////////////////////////////////
-
+/* verilator lint_off BLKANDNBLK */
 module cv32e40p_cs_registers
   import cv32e40p_pkg::*;
 #(
@@ -1536,3 +1536,4 @@ module cv32e40p_cs_registers
 `endif
 
 endmodule
+/* verilator lint_on BLKANDNBLK */
