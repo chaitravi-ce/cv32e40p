@@ -22,7 +22,7 @@
 // Description:    Defines for various constants used by the processor core.  //
 //                                                                            //
 ////////////////////////////////////////////////////////////////////////////////
-
+/* verilator lint_off MODDUP */
 package cv32e40p_pkg;
 
   ////////////////////////////////////////////////
@@ -797,3 +797,4 @@ package cv32e40p_pkg;
   parameter C_RM = 3;
 
 endpackage
+/* verilator lint_on MODDUP */

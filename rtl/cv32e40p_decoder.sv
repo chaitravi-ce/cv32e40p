@@ -24,7 +24,8 @@
 // Description:    Decoder                                                    //
 //                                                                            //
 ////////////////////////////////////////////////////////////////////////////////
-
+/* verilator lint_off WIDTHEXPAND */
+/* verilator lint_off WIDTHTRUNC */
 module cv32e40p_decoder
   import cv32e40p_pkg::*;
   import cv32e40p_apu_core_pkg::*;
@@ -2995,3 +2996,5 @@ module cv32e40p_decoder
   assign regfile_alu_we_dec_o         = regfile_alu_we;
 
 endmodule // cv32e40p_decoder
+/* verilator lint_on WIDTHEXPAND */
+/* verilator lint_on WIDTHTRUNC */

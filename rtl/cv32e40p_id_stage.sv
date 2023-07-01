@@ -26,6 +26,9 @@
 //                 and hosts the register file.                               //
 //                                                                            //
 ////////////////////////////////////////////////////////////////////////////////
+/* verilator lint_off WIDTHEXPAND */
+/* verilator lint_off WIDTHTRUNC */
+
 `include "cv32e40p_pkg.sv"
 `include "cv32e40p_apu_core_pkg.sv"
 `include "cv32e40p_fpu_pkg.sv"
@@ -1803,3 +1806,5 @@ module cv32e40p_id_stage
 `endif
 
 endmodule  // cv32e40p_id_stage
+/* verilator lint_on WIDTHEXPAND */
+/* verilator lint_on WIDTHTRUNC */

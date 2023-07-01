@@ -24,7 +24,7 @@
 // Description:    Arithmetic logic unit of the pipelined processor           //
 //                                                                            //
 ////////////////////////////////////////////////////////////////////////////////
-
+/* verilator lint_off CASEINCOMPLETE*/
 module cv32e40p_alu
   import cv32e40p_pkg::*;
 (
@@ -984,3 +984,4 @@ module cv32e40p_alu
   assign ready_o = div_ready;
 
 endmodule
+/* verilator lint_on CASEINCOMPLETE*/

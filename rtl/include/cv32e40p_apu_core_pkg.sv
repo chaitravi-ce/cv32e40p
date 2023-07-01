@@ -18,7 +18,7 @@
 // Description:    core package of RISC-V core for shared APU                 //
 //                                                                            //
 ////////////////////////////////////////////////////////////////////////////////
-
+/* verilator lint_off MODDUP */
 package cv32e40p_apu_core_pkg;
 
   // APU interface
@@ -28,3 +28,4 @@ package cv32e40p_apu_core_pkg;
   parameter APU_NUSFLAGS_CPU = 5;
 
 endpackage  // cv32e40p_apu_core_pkg
+/* verilator lint_on MODDUP */

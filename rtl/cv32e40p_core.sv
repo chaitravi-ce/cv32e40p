@@ -27,6 +27,7 @@
 //                 and the FPU                                                //
 //                                                                            //
 ////////////////////////////////////////////////////////////////////////////////
+/* verilator lint_off UNOPTFLAT*/
 `include "cv32e40p_apu_core_pkg.sv"
 `include "cv32e40p_pkg.sv"
 import cv32e40p_apu_core_pkg::*;
@@ -1269,3 +1270,4 @@ module cv32e40p_core
 `endif
 
 endmodule
+/* verilator lint_off UNOPTFLAT*/

@@ -21,7 +21,7 @@
 // Description:    Find First One                                             //
 //                                                                            //
 ////////////////////////////////////////////////////////////////////////////////
-
+/* verilator lint_off WIDTHTRUNC */
 module cv32e40p_ff_one #(
     parameter LEN = 32
 ) (
@@ -97,3 +97,4 @@ module cv32e40p_ff_one #(
   assign no_ones_o   = ~sel_nodes[0];
 
 endmodule
+/* verilator lint_on WIDTHTRUNC */

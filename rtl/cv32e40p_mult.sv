@@ -22,7 +22,10 @@
 // Description:    Advanced MAC unit for PULP.                                //
 //                                                                            //
 ////////////////////////////////////////////////////////////////////////////////
-
+/* verilator lint_off WIDTHEXPAND */
+/* verilator lint_off WIDTHTRUNC */
+/* verilator lint_off CASEINCOMPLETE*/
+/* verilator lint_off UNOPTFLAT*/
 module cv32e40p_mult
   import cv32e40p_pkg::*;
 (
@@ -385,3 +388,7 @@ module cv32e40p_mult
   }) >> 32)));
 `endif
 endmodule
+/* verilator lint_on WIDTHEXPAND */
+/* verilator lint_on WIDTHTRUNC */
+/* verilator lint_on CASEINCOMPLETE*/
+/* verilator lint_on UNOPTFLAT*/

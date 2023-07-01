@@ -11,7 +11,7 @@
 // !!! cv32e40p_sim_clock_gate file is meant for simulation only !!!
 // !!! It must not be used for ASIC synthesis                    !!!
 // !!! It must not be used for FPGA synthesis                    !!!
-
+/* verilator lint_off COMBDLY*/
 module cv32e40p_clock_gate (
     input  logic clk_i,
     input  logic en_i,
@@ -28,3 +28,4 @@ module cv32e40p_clock_gate (
   assign clk_o = clk_i & clk_en;
 
 endmodule  // cv32e40p_clock_gate
+/* verilator lint_on COMBDLY*/

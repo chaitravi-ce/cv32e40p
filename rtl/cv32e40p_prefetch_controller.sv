@@ -36,7 +36,7 @@
 //                 outstanding transactions.                                  //
 //                                                                            //
 ////////////////////////////////////////////////////////////////////////////////
-
+/* verilator lint_off WIDTHEXPAND */
 module cv32e40p_prefetch_controller #(
     parameter PULP_OBI = 0,  // Legacy PULP OBI behavior
     parameter COREV_PULP = 1,  // PULP ISA Extension (including PULP specific CSRs and hardware loop, excluding cv.elw)
@@ -361,3 +361,4 @@ module cv32e40p_prefetch_controller #(
   end
 
 endmodule  // cv32e40p_prefetch_controller
+/* verilator lint_on WIDTHEXPAND */

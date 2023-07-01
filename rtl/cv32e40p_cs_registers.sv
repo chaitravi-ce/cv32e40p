@@ -27,6 +27,9 @@
 //                                                                            //
 ////////////////////////////////////////////////////////////////////////////////
 /* verilator lint_off BLKANDNBLK */
+/* verilator lint_off WIDTHEXPAND */
+/* verilator lint_off CASEINCOMPLETE*/
+/* verilator lint_off WIDTHTRUNC */
 module cv32e40p_cs_registers
   import cv32e40p_pkg::*;
 #(
@@ -1537,3 +1540,6 @@ module cv32e40p_cs_registers
 
 endmodule
 /* verilator lint_on BLKANDNBLK */
+/* verilator lint_on WIDTHEXPAND */
+/* verilator lint_on WIDTHTRUNC */
+/* verilator lint_on CASEINCOMPLETE*/

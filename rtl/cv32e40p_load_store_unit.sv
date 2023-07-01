@@ -22,7 +22,7 @@
 //                 processor stalls, and to align bytes and halfwords         //
 //                                                                            //
 ////////////////////////////////////////////////////////////////////////////////
-
+/* verilator lint_off CASEINCOMPLETE*/
 module cv32e40p_load_store_unit #(
     parameter PULP_OBI = 0  // Legacy PULP OBI behavior
 ) (
@@ -547,3 +547,4 @@ module cv32e40p_load_store_unit #(
 `endif
 
 endmodule
+/* verilator lint_on CASEINCOMPLETE*/

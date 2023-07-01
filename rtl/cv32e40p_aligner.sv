@@ -19,7 +19,7 @@
 // Language:       SystemVerilog                                              //
 //                                                                            //
 ////////////////////////////////////////////////////////////////////////////////
-
+/* verilator lint_off CASEINCOMPLETE*/
 module cv32e40p_aligner (
     input logic clk,
     input logic rst_n,
@@ -250,3 +250,4 @@ module cv32e40p_aligner (
 `endif
 
 endmodule
+/* verilator lint_on CASEINCOMPLETE*/
