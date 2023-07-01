@@ -26,10 +26,11 @@
 //                 and hosts the register file.                               //
 //                                                                            //
 ////////////////////////////////////////////////////////////////////////////////
-
+`include "cv32e40p_pkg.sv"
+`include "cv32e40p_apu_core_pkg.sv"
+import cv32e40p_pkg::*;
+import cv32e40p_apu_core_pkg::*;
 module cv32e40p_id_stage
-  import cv32e40p_pkg::*;
-  import cv32e40p_apu_core_pkg::*;
 #(
     parameter COREV_PULP =  1,  // PULP ISA Extension (including PULP specific CSRs and hardware loop, excluding cv.elw)
     parameter COREV_CLUSTER = 0,
