@@ -25,6 +25,8 @@
 //                                                                            //
 ////////////////////////////////////////////////////////////////////////////////
 /* verilator lint_off CASEINCOMPLETE*/
+/* verilator lint_off WIDTHEXPAND */
+/* verilator lint_off WIDTHTRUNC */
 module cv32e40p_alu
   import cv32e40p_pkg::*;
 (
@@ -985,3 +987,5 @@ module cv32e40p_alu
 
 endmodule
 /* verilator lint_on CASEINCOMPLETE*/
+/* verilator lint_on WIDTHEXPAND */
+/* verilator lint_on WIDTHTRUNC */

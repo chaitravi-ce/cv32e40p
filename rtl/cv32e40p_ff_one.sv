@@ -22,6 +22,7 @@
 //                                                                            //
 ////////////////////////////////////////////////////////////////////////////////
 /* verilator lint_off WIDTHTRUNC */
+/* verilator lint_off UNOPTFLAT */
 module cv32e40p_ff_one #(
     parameter LEN = 32
 ) (
@@ -98,3 +99,4 @@ module cv32e40p_ff_one #(
 
 endmodule
 /* verilator lint_on WIDTHTRUNC */
+/* verilator lint_on UNOPTFLAT */

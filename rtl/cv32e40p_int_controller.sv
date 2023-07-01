@@ -20,7 +20,8 @@
 // Description:    Interrupt Controller of the pipelined processor            //
 //                                                                            //
 ////////////////////////////////////////////////////////////////////////////////
-
+/* verilator lint_off WIDTHEXPAND */
+/* verilator lint_off WIDTHTRUNC */
 module cv32e40p_int_controller
   import cv32e40p_pkg::*;
 #(
@@ -150,3 +151,5 @@ module cv32e40p_int_controller
   assign irq_sec_ctrl_o = irq_sec_q;
 
 endmodule  // cv32e40p_int_controller
+/* verilator lint_on WIDTHEXPAND */
+/* verilator lint_on WIDTHTRUNC */

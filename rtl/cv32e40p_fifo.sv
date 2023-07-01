@@ -11,7 +11,7 @@
 // Author: Florian Zaruba <zarubaf@iis.ee.ethz.ch>
 
 // Copy of fifo_v3 from https://github.com/pulp-platform/common_cells b2a4b2d3decdfc152ad9b4564a48ed3b2649fd6c
-
+/* verilator lint_off WIDTHEXPAND */
 module cv32e40p_fifo #(
     parameter bit FALL_THROUGH = 1'b0,  // fifo is in fall-through mode
     parameter int unsigned DATA_WIDTH = 32,  // default data width if the fifo is of type logic
@@ -166,3 +166,4 @@ module cv32e40p_fifo #(
 `endif
 
 endmodule  // cv32e40p_fifo
+/* verilator lint_on WIDTHEXPAND */
